@@ -3,9 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap');
 
 /* Globals */
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: 'Alegreya SC', serif;
@@ -20,6 +18,7 @@ h2,
 h3 {
     font-weight: normal;
 }
+
 
 .button {
     display: inline-block;
@@ -54,22 +53,11 @@ header {
     z-index:10;
 }
 
-/*
-@media (max-width: 1000px) {
-    header {
-        background: red;
-    }
-
-    header a {
-        color: blue;
-    }
-}
-*/
-
 /* Join club */
 header .join-club {
     background: #0A3641;
     padding: 8px;
+    
 }
 
 header .join-club p {
@@ -78,11 +66,12 @@ header .join-club p {
     font-size: 25px;
     color: #ffff;
     text-align: center;
+    
 }
 
 /* Header nav lists */
 header nav ul {
-    list-style: none;
+    list-style: none;   
     padding: 0;
     margin: 0;
 }
@@ -191,7 +180,7 @@ header .lower-menu {
     text-align: center;
     border-top: 1px solid #0A3641;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 /* About us */
@@ -201,6 +190,7 @@ header .lower-menu {
     display: flex;
     padding-left: 140px;
     padding-right: 140px;
+    padding-bottom: 50px;
 }
 
 .about-content-wrapper img {
@@ -382,6 +372,7 @@ header .lower-menu {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 /* Shopping cart */
@@ -533,10 +524,11 @@ header .lower-menu {
 .thank-you p {
     max-width: 700px;
     margin: 0 auto; 
+    padding-bottom: 50px;
 }
 
 .thank-you-sticky {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -545,3 +537,220 @@ header .lower-menu {
     text-align: right;
     z-index: 10;
 }
+
+.footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #0A3641;
+    color: white;
+  }
+
+.footer p{
+    margin: 0;
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+
+    header .top-menu h1 {
+        font-size: 30px;
+    }
+
+    header .top-menu img {
+        height: 90px;   
+    }
+
+    header .top-menu nav ul li {
+        display: list-item ;
+    }
+
+    header .top-menu nav ul li img {
+        display: none;
+    }
+
+    header .top-menu nav ul li::after {
+        display: none;
+    }
+
+    header nav ul li::after {
+        font-size: 15px;
+    }
+
+    header .top-menu nav ul li a img {
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+    }
+
+    header .join-club p {
+        font-size: 15px;
+    }
+    .about-content-wrapper {
+        padding-left: 20px;
+        padding-right: 5px;
+        padding-bottom: 50px;
+    }
+    
+    .about-content-wrapper img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .about-content-wrapper p {
+        margin: 0 10px 10px 30px;
+    }
+
+    .products-list {
+        padding: 0 10px 30px 10px;
+    }
+    
+    .products-list .product {
+        margin: 0 10px;
+    }
+
+    .product-details {
+        display: flex;
+        padding: 0 10px;
+    }
+    
+    .product-details .main-image {
+        width: 400px;
+    }
+    
+    .product-details .other-images {  
+        margin-left: 10px;
+    }
+    
+    .product-details .content {
+        margin-left: 30px;
+    }
+
+    .product-details .content .button {
+        padding: 15px 35px;
+    }
+   
+    .product-details .content .sizes{
+        font-size: 15px;
+    }
+    
+    .product-details .content .sizes a::after {
+        font-size: 15px;
+    }
+    .product-details .content .colors .color {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    
+    .product-details .content .button {
+        margin-bottom: 40px;
+    }
+    
+    .product-details .content .recommended {
+        font-size:15px ;
+    }
+
+    .frontpage-links {
+        display: grid;
+    }
+    
+    .frontpage-links .link {
+        margin: 10px 10px;
+    }
+
+    .cart-table-wrapper{
+        padding-left: 10px;
+    }
+
+    .cart-table .product {
+        display: flex;
+        font-size: 15px;
+    }
+
+    .cart-table .price {
+        font-size: 20px;
+        padding-right: 5px;
+        padding-left: 10px;
+        width: 100px;
+    }
+
+    .cart-table th {
+        font-size: 20px;
+        padding-right: 5px;
+        padding-left: 10px;
+        width: 100px;
+    }
+
+    .cart-table .product .image {
+        width: 0px;
+    }
+    
+    .cart-table .product .content .description {
+        margin: 0;
+        font-size: 15px;    
+    }
+
+    .cart-table .product .content .title {
+        margin: 0 20px 10px 0;
+    }
+    
+    .cart-table .count-buttons .item {
+        border: 2px solid #0A3641;
+        padding: 4px 4px;
+    }
+    
+    .cart-summary {
+        padding: 50px 0px 0px 0px;
+    }
+    
+    .cart-summary .promo{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .cart-summary .promo .input {
+        width: 30px;
+        margin: 0 0 0 10px;
+        font-size: 0.1rem;
+    }
+    
+    .cart-summary .summary {
+        margin-top: 90px;
+        margin-right: 40px; 
+    }
+    
+    .cart-summary .summary table td {
+        padding: 5px;
+    }
+    
+    .cart-summary .summary .button {
+        margin-bottom: 20px;
+    }
+
+    .forms-wrapper {
+        padding: 0 0 50px 0;
+        font-size: 15px;
+    }
+    
+    .forms-wrapper .input {
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+
+    .forms-wrapper .contact-details,
+    .forms-wrapper .card-details {
+        margin: 0 25px;
+    }
+    
+    .forms-wrapper .card-details {
+        padding: 20px 50px;
+    }
